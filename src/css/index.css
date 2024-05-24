@@ -1,0 +1,13 @@
+#campos{
+    display: flex;
+    align-items: center;
+    width: 178px;
+    gap: 10px;
+}
+
+#buscarcep{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    width: 178px;
+}
