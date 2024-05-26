@@ -14,11 +14,11 @@ Validação do CEP: A aplicação verifica se o CEP fornecido é válido e limpa
 </ul>
 
 # Observações
-No vídeo os campos abaixo estão todos cadastrados como logradouro então é só alterar de acordo com a API:
-        if (endereco && !endereco.error) {
-            ruaInput.value = endereco.logradouro || '';
-            cidadeInput.value = endereco.localidade || '';
-            estadoInput.value = endereco.uf || '';
+No vídeo os campos abaixo estão todos cadastrados como logradouro então é só alterar de acordo com a API:<br>
+        if (endereco && !endereco.error) {<br>
+            ruaInput.value = endereco.logradouro || '';<br>
+            cidadeInput.value = endereco.localidade || '';<br>
+            estadoInput.value = endereco.uf || '';<br>
 Certifique-se de que a entrada do CEP contém exatamente 8 caracteres numéricos.
 Em caso de erro na comunicação com o servidor, uma mensagem de erro será exibida no console.
 Se o CEP for inválido ou não encontrado, os campos de endereço serão limpos e uma mensagem de alerta será exibida.
