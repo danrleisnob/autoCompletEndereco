@@ -1,13 +1,197 @@
-#campos{
-    display: flex;
-    align-items: center;
-    width: 178px;
-    gap: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Encode+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#buscarcep{
+body {
+    width: 100%;
     display: flex;
-    margin-bottom: 10px;
-    gap: 10px;
-    width: 178px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #4B0082;
 }
+
+header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 4rem;
+}
+
+.menu{
+
+    display: flex;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.menu2 p{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+
+#caminhos{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#caminhos div{
+    width: 5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#caminhos div:hover{
+    -webkit-box-shadow: 2px 6px 52px 0px rgba(1, 78, 1, 0.75);
+    -moz-box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.75);
+}
+
+#caminhos #verde{
+    background: #009c10b6;
+}
+
+#caminhos #linear{
+    background: #00ED18;
+    animation: infiniteMove 4s ease-in-out infinite;
+    -webkit-box-shadow: 2px 6px 52px 0px rgba(79, 224, 79, 0.75);
+    -moz-box-shadow: 2px 6px 52px 0px rgba(57, 226, 51, 0.75);
+    box-shadow: 2px 6px 52px 0px rgba(0, 240, 100, 0.75);
+}
+
+@keyframes infiniteMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#caminhos #cinza{
+    background: gray;
+}
+
+article{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input {
+    width: 43%;
+    height: 3rem;
+    padding-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    color: rgba(24, 24, 24, 0.541);
+}
+
+.registroBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.registroBtn button{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.registroBtn button:hover{
+    background: #00ED18;
+}
+
+.registroBtn button i{
+    color: black;
+    transition: 2s ease-in-out;
+}
+
+.registroBtn button i:hover{
+    color: black;
+    display: flex;
+
+    transform: translateX(5rem)
+}
+
